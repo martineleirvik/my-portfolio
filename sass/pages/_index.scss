@@ -1,0 +1,17 @@
+.front-page-text {
+  color: getColour(black);
+
+  .big-text {
+    font-size: 2rem;
+  }
+}
+
+#about-btn {
+  text-decoration: none;
+  color: getColour(black);
+  border: 3px solid getColour(dark-purple);
+  background-color: getColour(light-purple);
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+}

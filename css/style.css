@@ -5,9 +5,18 @@
           box-sizing: border-box;
 }
 
-nav {
-  min-height: 8vh;
-  background-color: lightblue;
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: getColour(text);
+}
+
+.flex-container {
+  min-height: 100vh;
+}
+
+.flex-container nav {
+  min-height: 6vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,7 +25,7 @@ nav {
           align-items: center;
 }
 
-nav ul {
+.flex-container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,27 +36,33 @@ nav ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   float: right;
+  margin-bottom: 0;
 }
 
-nav ul li {
+.flex-container nav ul li {
   list-style: none;
 }
 
-nav ul li a {
+.flex-container nav ul li .active {
+  font-weight: bold;
+  color: #8288da;
+}
+
+.flex-container nav ul li a {
   color: #707070;
   text-decoration: none;
 }
 
-nav ul li img {
+.flex-container nav ul li img {
   width: 25px;
 }
 
-nav .burger {
+.flex-container nav .burger {
   display: none;
   cursor: pointer;
 }
 
-nav .burger div {
+.flex-container nav .burger div {
   width: 27px;
   height: 2px;
   background-color: #707070;
@@ -59,13 +74,14 @@ nav .burger div {
     overflow-x: hidden;
     position: relative;
   }
-  nav ul {
+  .flex-container nav ul {
     position: absolute;
+    z-index: 1;
     width: 100%;
     right: 0;
-    top: 8vh;
-    height: 100vh;
-    background-color: lightblue;
+    top: 6vh;
+    height: 94vh;
+    background-color: #d3d5ec;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -77,10 +93,10 @@ nav .burger div {
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
-  nav ul li {
+  .flex-container nav ul li {
     opacity: 0;
   }
-  nav .burger {
+  .flex-container nav .burger {
     display: block;
   }
 }
@@ -128,5 +144,27 @@ nav .burger div {
 .toggle .line3 {
   -webkit-transform: rotate(45deg) translate(-7px, -5px);
           transform: rotate(45deg) translate(-7px, -5px);
+}
+
+.front-page-text {
+  color: #000000;
+}
+
+.front-page-text .big-text {
+  font-size: 2rem;
+}
+
+#about-btn {
+  text-decoration: none;
+  color: #000000;
+  border: 3px solid #8288da;
+  background-color: #d3d5ec;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.btn .btn-primary {
+  background-color: #8288da;
 }
 /*# sourceMappingURL=style.css.map */
