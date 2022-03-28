@@ -48,10 +48,10 @@ nav .burger {
 }
 
 nav .burger div {
-  width: 30px;
+  width: 27px;
   height: 2px;
   background-color: #707070;
-  margin: 5px;
+  margin: 6px;
 }
 
 @media (max-width: 700px) {
@@ -61,7 +61,7 @@ nav .burger div {
   }
   nav ul {
     position: absolute;
-    width: 100% !important;
+    width: 100%;
     right: 0;
     top: 8vh;
     height: 100vh;
@@ -82,7 +82,6 @@ nav .burger div {
   }
   nav .burger {
     display: block;
-    float: right;
   }
 }
 
@@ -118,8 +117,8 @@ nav .burger div {
 }
 
 .toggle .line1 {
-  -webkit-transform: rotate(-45deg) translate(-6px, 3px);
-          transform: rotate(-45deg) translate(-6px, 3px);
+  -webkit-transform: rotate(-45deg) translate(-7px, 4px);
+          transform: rotate(-45deg) translate(-7px, 4px);
 }
 
 .toggle .line2 {
@@ -127,7 +126,7 @@ nav .burger div {
 }
 
 .toggle .line3 {
-  -webkit-transform: rotate(45deg) translate(-5px, -3px);
-          transform: rotate(45deg) translate(-5px, -3px);
+  -webkit-transform: rotate(45deg) translate(-7px, -5px);
+          transform: rotate(45deg) translate(-7px, -5px);
 }
 /*# sourceMappingURL=style.css.map */
