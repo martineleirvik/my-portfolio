@@ -1,0 +1,9 @@
+$colours: (
+  text: #707070,
+  light-purple: #d3d5ec,
+  dark-purple: #8288da,
+);
+
+@function getColour($colour) {
+  @return map-get($map: $colours, $key: $colour);
+}
