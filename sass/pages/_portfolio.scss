@@ -1,5 +1,11 @@
-.btn {
-  .btn-primary {
-    background-color: getColour(dark-purple);
-  }
+.link-btn {
+  display: flex;
+  justify-content: center;
+}
+.btn-primary {
+  background-color: getColour(dark-purple);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 25px;
+  margin: 0 20px;
 }
