@@ -31,6 +31,7 @@
     }
     .burger {
       display: none;
+      z-index: 1;
       cursor: pointer;
 
       div {
@@ -54,8 +55,8 @@
         z-index: 1;
         width: 100%;
         right: 0;
-        top: 6vh;
-        height: 94vh;
+        top: 0;
+        height: 100vh;
         background-color: getColour(light-purple);
         flex-direction: column;
         transform: translateX(100%);

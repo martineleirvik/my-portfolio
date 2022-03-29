@@ -89,6 +89,7 @@ footer p {
 
 .flex-container nav .burger {
   display: none;
+  z-index: 1;
   cursor: pointer;
 }
 
@@ -109,8 +110,8 @@ footer p {
     z-index: 1;
     width: 100%;
     right: 0;
-    top: 6vh;
-    height: 94vh;
+    top: 0;
+    height: 100vh;
     background-color: #d3d5ec;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
