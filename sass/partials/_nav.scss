@@ -7,11 +7,11 @@
 
     ul {
       display: flex;
-      width: 50%;
+      width: 100%;
       align-items: center;
       justify-content: space-around;
-      float: right;
       margin-bottom: 0;
+      margin-left: 50%;
 
       li {
         list-style: none;

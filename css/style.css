@@ -58,14 +58,14 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  float: right;
   margin-bottom: 0;
+  margin-left: 50%;
 }
 
 .flex-container nav ul li {
@@ -232,7 +232,7 @@ footer p {
           animation: bounce 1s linear;
 }
 
-.container .circle .circle:hover {
+.container .circle:hover {
   -webkit-animation: bounce 1s linear;
           animation: bounce 1s linear;
 }
