@@ -55,6 +55,7 @@ h1 {
 
 .flex-container nav ul li img {
   width: 25px;
+  cursor: pointer;
 }
 
 .flex-container nav .burger {
@@ -92,9 +93,15 @@ h1 {
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    padding: 0;
   }
   .flex-container nav ul li {
     opacity: 0;
+  }
+  .flex-container nav ul li .active {
+    color: #707070;
+    font-weight: normal;
+    border-bottom: 1px solid #707070;
   }
   .flex-container nav .burger {
     display: block;
@@ -146,22 +153,154 @@ h1 {
           transform: rotate(45deg) translate(-7px, -5px);
 }
 
-.front-page-text {
-  color: #000000;
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
 }
 
-.front-page-text .big-text {
+.container .front-page-text {
+  color: #000000;
+  position: relative;
+  z-index: 0.8;
+}
+
+.container .front-page-text .big-text {
   font-size: 2rem;
 }
 
-#about-btn {
+.container .front-page-text #about-btn {
   text-decoration: none;
   color: #000000;
   border: 3px solid #8288da;
   background-color: #d3d5ec;
   padding: 10px 20px;
   border-radius: 20px;
+}
+
+.container .circle {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #d3d5ec;
+  position: static;
+  margin-left: -100px;
   margin-top: 50px;
+  z-index: -1;
+  -webkit-animation: bounce 1s linear;
+          animation: bounce 1s linear;
+}
+
+.container .circle .circle:hover {
+  -webkit-animation: bounce 1s linear;
+          animation: bounce 1s linear;
+}
+
+@media (max-width: 1000px) {
+  .container .front-page-text .small-text {
+    font-size: 1rem;
+  }
+  .container .front-page-text .big-text {
+    font-size: 1.6rem;
+  }
+  .container .front-page-text #about-btn {
+    font-size: 1rem;
+  }
+  .container .circle {
+    width: 270px;
+    height: 270px;
+    margin-left: -80px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container .front-page-text .small-text {
+    font-size: 0.6rem;
+  }
+  .container .front-page-text .big-text {
+    font-size: 1rem;
+  }
+  .container .front-page-text #about-btn {
+    font-size: 0.8rem;
+    padding: 5px 13px;
+    border: 2px solid #8288da;
+    border-radius: 15px;
+  }
+  .container .circle {
+    width: 200px;
+    height: 200px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .front-page-text .small-text {
+    font-size: 0.6rem;
+  }
+  .container .front-page-text .big-text {
+    font-size: 1rem;
+  }
+  .container .front-page-text #about-btn {
+    font-size: 0.8rem;
+    padding: 5px 13px;
+    border: 2px solid #8288da;
+    border-radius: 15px;
+  }
+  .container .circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@-webkit-keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  70% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  90% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  70% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  90% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
 }
 
 .link-btn {
@@ -179,5 +318,19 @@ h1 {
   border-radius: 15px;
   padding: 5px 25px;
   margin: 0 20px;
+}
+
+.card {
+  border-radius: 30px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card img {
+  border-radius: 30px 30px 0 0;
+}
+
+.card #carouselExampleIndicators button {
+  z-index: 0.5;
 }
 /*# sourceMappingURL=style.css.map */
