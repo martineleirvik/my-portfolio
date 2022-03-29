@@ -9,10 +9,6 @@ $colours: (
   footer: #e4e4e4,
 );
 
-$colours-dark: (
-  background: #212121,
-);
-
 @function getColour($colour) {
   @return map-get($map: $colours, $key: $colour);
 }

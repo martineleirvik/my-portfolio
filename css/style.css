@@ -87,6 +87,11 @@ footer p {
   cursor: pointer;
 }
 
+.flex-container nav ul li:hover {
+  color: #8288da;
+  text-decoration: underline;
+}
+
 .flex-container nav .burger {
   display: none;
   z-index: 1;
@@ -374,12 +379,18 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 30px;
 }
 
 .flex-about img {
-  max-width: 400px;
-  max-height: 400px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -413,6 +424,16 @@ footer p {
 @media (max-width: 700px) {
   .flex-about .text-about {
     max-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .flex-about img {
+    width: 200px;
+    height: 200px;
+  }
+  .flex-about .text-about {
+    max-width: 280px;
   }
 }
 

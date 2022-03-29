@@ -28,6 +28,10 @@
           cursor: pointer;
         }
       }
+      li:hover {
+        color: getColour(dark-purple);
+        text-decoration: underline;
+      }
     }
     .burger {
       display: none;
