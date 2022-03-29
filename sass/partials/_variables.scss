@@ -2,10 +2,15 @@ $colours: (
   text: #707070,
   black: #000000,
   white: #ffffff,
+  background: #ffffff,
   light-purple: #d3d5ec,
   dark-purple: #8288da,
   dark-mode: #212121,
   footer: #e4e4e4,
+);
+
+$colours-dark: (
+  background: #212121,
 );
 
 @function getColour($colour) {

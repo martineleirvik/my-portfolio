@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: getColour(background);
+}
+
 h1 {
   text-align: center;
   margin-top: 20px;
   color: getColour(text);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

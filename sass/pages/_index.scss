@@ -7,7 +7,6 @@
   .front-page-text {
     color: getColour(black);
     position: relative;
-    z-index: 0.8;
 
     .big-text {
       font-size: 2rem;
@@ -58,14 +57,14 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .container {
     .front-page-text {
       .small-text {
         font-size: 0.6rem;
       }
       .big-text {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
       #about-btn {
         font-size: 0.8rem;
@@ -82,7 +81,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .container {
     .front-page-text {
       .small-text {

@@ -1,0 +1,42 @@
+.flex-about {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  img {
+    max-width: 400px;
+    max-height: 400px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .text-about {
+    max-width: 500px;
+    margin-left: 50px;
+  }
+}
+
+.svg img {
+  fill: getColour(text);
+  color: getColour(text);
+}
+
+@media (max-width: 900px) {
+  .flex-about {
+    flex-direction: column;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    .text-about {
+      margin: 40px auto 0 auto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .flex-about {
+    .text-about {
+      max-width: 300px;
+    }
+  }
+}
