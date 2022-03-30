@@ -7,6 +7,8 @@
   .front-page-text {
     color: getColour(black);
     position: relative;
+    z-index: 2;
+    top: 20px;
 
     .big-text {
       font-size: 2rem;
@@ -18,7 +20,9 @@
     border: 3px solid getColour(dark-purple);
     background-color: getColour(light-purple);
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 10px;
   }
   .circle {
     width: 400px;
@@ -28,7 +32,7 @@
     position: static;
     margin-left: -100px;
     margin-top: 50px;
-    z-index: -1;
+    z-index: 1;
     animation: bounce 1s linear;
   }
   .circle:hover {

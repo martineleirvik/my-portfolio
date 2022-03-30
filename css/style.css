@@ -209,6 +209,8 @@ footer p {
 .container .front-page-text {
   color: #000000;
   position: relative;
+  z-index: 2;
+  top: 20px;
 }
 
 .container .front-page-text .big-text {
@@ -221,7 +223,9 @@ footer p {
   border: 3px solid #8288da;
   background-color: #d3d5ec;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .container .circle {
@@ -232,7 +236,7 @@ footer p {
   position: static;
   margin-left: -100px;
   margin-top: 50px;
-  z-index: -1;
+  z-index: 1;
   -webkit-animation: bounce 1s linear;
           animation: bounce 1s linear;
 }
