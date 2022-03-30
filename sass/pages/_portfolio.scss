@@ -20,6 +20,8 @@
   border-radius: 30px;
   margin: 20px 0;
   max-width: 400px;
+  min-height: 520px;
+  z-index: 0;
 
   img {
     border-radius: 30px 30px 0 0;
@@ -29,7 +31,48 @@
       z-index: 0.5;
     }
   }
+  .card-text {
+    span {
+      text-decoration: underline;
+    }
+  }
 }
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+.card-blur {
+  filter: blur(2px);
+}
+
+.col {
+  margin: 0 auto;
+}
+
+.carousel-control-next-icon {
+  fill: getColour(dark-purple);
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 300px;
+    min-height: 520px;
+
+    a {
+      font-size: 0.8rem;
+    }
+    .btn-primary {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    max-width: 250px;
+    min-height: 520px;
+
+    .btn-primary {
+      margin: 0 3px;
+    }
+  }
 }

@@ -371,6 +371,8 @@ footer p {
   border-radius: 30px;
   margin: 20px 0;
   max-width: 400px;
+  min-height: 520px;
+  z-index: 0;
 }
 
 .card img {
@@ -381,9 +383,49 @@ footer p {
   z-index: 0.5;
 }
 
+.card .card-text span {
+  text-decoration: underline;
+}
+
 .card:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+}
+
+.card-blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.col {
+  margin: 0 auto;
+}
+
+.carousel-control-next-icon {
+  fill: #8288da;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 300px;
+    min-height: 520px;
+  }
+  .card a {
+    font-size: 0.8rem;
+  }
+  .card .btn-primary {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    max-width: 250px;
+    min-height: 520px;
+  }
+  .card .btn-primary {
+    margin: 0 3px;
+  }
 }
 
 .flex-about {
@@ -491,7 +533,7 @@ footer p {
     height: 200px;
   }
   .flex-about .text-about {
-    max-width: 280px;
+    max-width: 260px;
   }
   .svg-container {
     grid-gap: 10px;
