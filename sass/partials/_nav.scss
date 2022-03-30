@@ -35,7 +35,7 @@
     }
     .burger {
       display: none;
-      z-index: 1;
+      z-index: 4;
       cursor: pointer;
 
       div {
@@ -56,7 +56,7 @@
     nav {
       ul {
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         width: 100%;
         right: 0;
         top: 0;
