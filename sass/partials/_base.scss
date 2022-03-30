@@ -14,6 +14,11 @@ h1 {
   color: getColour(text);
 }
 
+h2 {
+  color: getColour(text);
+  margin: 40px 50px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;

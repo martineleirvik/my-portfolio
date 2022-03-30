@@ -15,6 +15,11 @@ h1 {
   color: #707070;
 }
 
+h2 {
+  color: #707070;
+  margin: 40px 50px;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,7 +215,7 @@ footer p {
   font-size: 2rem;
 }
 
-.container .front-page-text #about-btn {
+.container #about-btn {
   text-decoration: none;
   color: #000000;
   border: 3px solid #8288da;
@@ -354,9 +359,18 @@ footer p {
   margin: 0 20px;
 }
 
+.btn-primary:hover {
+  background-color: #d3d5ec;
+}
+
+.btn-primary:focus {
+  display: none;
+}
+
 .card {
   border-radius: 30px;
   margin: 20px 0;
+  max-width: 400px;
 }
 
 .card img {
@@ -368,8 +382,8 @@ footer p {
 }
 
 .card:hover {
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 
 .flex-about {
@@ -393,6 +407,8 @@ footer p {
      object-fit: cover;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .flex-about .text-about {
@@ -400,9 +416,41 @@ footer p {
   margin-left: 50px;
 }
 
-.svg img {
-  fill: #707070;
+.svg-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+  margin: 10px 10%;
+}
+
+.svg-container .svg {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.svg-container .svg p {
   color: #707070;
+}
+
+.svg-container img {
+  width: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 900px) {
@@ -419,11 +467,21 @@ footer p {
   .flex-about .text-about {
     margin: 40px auto 0 auto;
   }
+  .svg-container {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 700px) {
   .flex-about .text-about {
     max-width: 300px;
+  }
+  .svg-container {
+    grid-gap: 15px;
+  }
+  .svg-container img {
+    width: 60px;
   }
 }
 
@@ -434,6 +492,15 @@ footer p {
   }
   .flex-about .text-about {
     max-width: 280px;
+  }
+  .svg-container {
+    grid-gap: 10px;
+  }
+  .svg-container img {
+    width: 40px;
+  }
+  .svg-container p {
+    font-size: 0.7rem;
   }
 }
 
