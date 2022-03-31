@@ -1,7 +1,7 @@
 form {
   max-width: 450px;
   margin: 30px auto 0 auto;
-  color: getColour(text);
+  color: var(--text);
 
   div {
     margin-bottom: 10px;

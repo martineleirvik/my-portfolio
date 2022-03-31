@@ -1,3 +1,17 @@
+:root {
+  --text: #707070;
+  --text-black: #000000;
+  --background: #ffffff;
+  --background-secondary: #ffffff;
+}
+
+.dark-mode {
+  --text: #ffffff;
+  --text-black: #ffffff;
+  --background: #212121;
+  --background-secondary: #424242;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +20,17 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--background);
 }
 
 h1 {
   text-align: center;
   margin-top: 20px;
-  color: #707070;
+  color: var(--text);
 }
 
 h2 {
-  color: #707070;
+  color: var(--text);
   margin: 40px auto;
 }
 
@@ -83,7 +97,7 @@ footer p {
 }
 
 .flex-container nav ul li a {
-  color: #707070;
+  color: var(--text);
   text-decoration: none;
 }
 
@@ -106,7 +120,7 @@ footer p {
 .flex-container nav .burger div {
   width: 27px;
   height: 2px;
-  background-color: #707070;
+  background-color: var(--text);
   margin: 6px;
 }
 
@@ -207,7 +221,7 @@ footer p {
 }
 
 .container .front-page-text {
-  color: #000000;
+  color: var(--text-black);
   position: relative;
   z-index: 2;
   top: 20px;
@@ -219,7 +233,7 @@ footer p {
 
 .container #about-btn {
   text-decoration: none;
-  color: #000000;
+  color: var(--text-black);
   border: 3px solid #8288da;
   background-color: #d3d5ec;
   padding: 10px 20px;
@@ -375,6 +389,8 @@ footer p {
   max-width: 400px;
   min-height: 520px;
   z-index: 0;
+  background-color: var(--background-secondary);
+  color: var(--text);
 }
 
 .card img {
@@ -458,6 +474,7 @@ footer p {
 .flex-about .text-about {
   max-width: 500px;
   margin-left: 50px;
+  color: var(--text);
 }
 
 .svg-container {
@@ -467,6 +484,9 @@ footer p {
       grid-template-columns: repeat(6, 1fr);
   grid-gap: 30px;
   margin: 10px 10%;
+  background-color: var(--background-secondary);
+  border-radius: 30px;
+  padding: 20px 10px;
 }
 
 .svg-container .svg {
@@ -487,7 +507,8 @@ footer p {
 }
 
 .svg-container .svg p {
-  color: #707070;
+  color: var(--text);
+  font-weight: bold;
 }
 
 .svg-container img {
@@ -551,7 +572,7 @@ footer p {
 form {
   max-width: 450px;
   margin: 30px auto 0 auto;
-  color: #707070;
+  color: var(--text);
 }
 
 form div {

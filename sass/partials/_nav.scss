@@ -20,7 +20,7 @@
           color: getColour(dark-purple);
         }
         a {
-          color: getColour(text);
+          color: var(--text);
           text-decoration: none;
         }
         img {
@@ -41,7 +41,7 @@
       div {
         width: 27px;
         height: 2px;
-        background-color: getColour(text);
+        background-color: var(--text);
         margin: 6px;
       }
     }

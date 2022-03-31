@@ -5,17 +5,17 @@
 }
 
 body {
-  background-color: getColour(white);
+  background-color: var(--background);
 }
 
 h1 {
   text-align: center;
   margin-top: 20px;
-  color: getColour(text);
+  color: var(--text);
 }
 
 h2 {
-  color: getColour(text);
+  color: var(--text);
   margin: 40px auto;
 }
 

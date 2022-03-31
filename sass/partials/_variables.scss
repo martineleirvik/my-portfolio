@@ -12,3 +12,17 @@ $colours: (
 @function getColour($colour) {
   @return map-get($map: $colours, $key: $colour);
 }
+
+:root {
+  --text: #707070;
+  --text-black: #000000;
+  --background: #ffffff;
+  --background-secondary: #ffffff;
+}
+
+.dark-mode {
+  --text: #ffffff;
+  --text-black: #ffffff;
+  --background: #212121;
+  --background-secondary: #424242;
+}
