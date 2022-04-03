@@ -22,6 +22,7 @@
         a {
           color: var(--text);
           text-decoration: none;
+          letter-spacing: 1px;
         }
         img {
           width: 25px;
@@ -70,14 +71,15 @@
         li {
           opacity: 0;
           .active {
-            color: getColour(text);
+            color: var(--text);
             font-weight: normal;
-            border-bottom: 1px solid getColour(text);
+            text-decoration: underline;
           }
         }
       }
       .burger {
         display: block;
+        margin: 10px;
       }
     }
   }
